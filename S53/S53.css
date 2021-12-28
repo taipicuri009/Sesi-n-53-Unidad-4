@@ -1,0 +1,16 @@
+.container > div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffcef8;
+    border: 2px solid #9b98a0
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*fr es una unidad flexible, se definen 3 columnas*/
+    /*grid-template-columns: 200px 200px 200px;*/
+    grid-gap: 20px; /*se define el espacio en una cuadricula*/
+    grid-auto-rows: 100px; /* se define el alto en cada fila a 100px*/
+
+
+}

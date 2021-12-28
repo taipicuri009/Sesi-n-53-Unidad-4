@@ -1,0 +1,29 @@
+.container > div{
+    border-radius:  5px;
+    padding: 10px;
+    background-color: #f7d5e9;
+    border: 2px solid #b0b5b8;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*fr es una unidad flexible, se definen 3 columnas*/
+    grid-auto-rows: auto; /* Se define el alto de cada fila a auto */
+    grid-gap: 20px; /*Se define el espaciado entre cada cuadrícula */
+}
+@media only screen and (max-width:600px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    .container {
+      grid-template-columns: 1fr 1fr; /*fr es una unidad flexible, se definen 2 columnas*/
+      grid-auto-rows: auto; /* Se define el alto de cada fila a auto */
+      grid-gap: 10px; /* Se define el espaciado entre cada cuadricula */
+    }
+  }
+  
